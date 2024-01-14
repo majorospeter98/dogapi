@@ -43,7 +43,7 @@ function Home(){
     
     return (
       <div>
-        <div className="grid">
+        <div className="flex container">
           {dog?.map((dogs) => (
             <div className="flex">
               <img src={dogs.url} />

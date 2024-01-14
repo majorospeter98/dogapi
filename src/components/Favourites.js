@@ -8,21 +8,18 @@ function Favourites (){
     const getFavourites = () =>{
         axios.get("https://api.thedogapi.com/v1/favourites?sub_id=Test",config)
         .then(response =>setFavourite((response.data)))
-        
-    } 
+            } 
     const delFavourites = (e,id) =>{
         e.preventDefault();
         axios.delete(`https://api.thedogapi.com/v1/favourites/${id}`,deleteConfig)
         .then(response => console.log(response.data));
-        
-    }
+            }
     useEffect(() =>{
 getFavourites();
-
     }, [favourite])
     return (
                 <>
-                <div className="grid">
+                <div className="flex container">
 {favourite?.map(favs=>(
         <div className="flex">
     <img src={favs.image.url}/>
@@ -32,6 +29,5 @@ getFavourites();
 </div>
         </>
     )
-
 }
 export default Favourites;

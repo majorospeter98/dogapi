@@ -3,6 +3,9 @@
   margin:0;
   box-sizing: border-box;
   line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 img{
   max-width: 100%;
@@ -38,8 +41,7 @@ a{
 .icon{
   margin:0 auto;
   color:red;
-  
-} 
+  } 
 .center{
   margin-top:3rem;
   display:flex;

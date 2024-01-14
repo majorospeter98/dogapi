@@ -6,11 +6,11 @@ function App() {
   return (
 <>
 <div className='navbar'>
-  <Link to="/">Home</Link>
+  <Link to="/dogapi">Home</Link>
   <Link to="/Favourites">Favourites</Link>
 </div>
 <Routes>
-<Route path="/" element={<Home/>}/>
+<Route path="/dogapi" element={<Home/>}/>
   <Route path="/Favourites" element={<Favourites/>}/>
 </Routes>
 
