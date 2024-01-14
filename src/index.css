@@ -1,55 +1,55 @@
-*{
-  padding:0;
-  margin:0;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-img{
+img {
   max-width: 100%;
-  height:300px;
-  width:300px;
+  height: 300px;
+  width: 300px;
 }
-a{
+a {
   text-decoration: none;
-  font-size:1.4rem;
+  font-size: 1.4rem;
 }
-.navbar{
-  display:flex;
+.navbar {
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap:2rem;
+  gap: 2rem;
 }
-.grid{
- display: flex;
- align-items: center;
- justify-content: center;
- flex-wrap:wrap;
- gap:2rem;
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
-.flex{
-  display:flex;
+.flex {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:2rem;
+  gap: 2rem;
   text-align: center;
-  margin-top:3rem;
-}              
-.icon{
-  margin:0 auto;
-  color:red;
-  } 
-.center{
-  margin-top:3rem;
-  display:flex;
+  margin-top: 3rem;
+}
+.icon {
+  margin: 0 auto;
+  color: red;
+}
+.center {
+  margin-top: 3rem;
+  display: flex;
   justify-content: center;
   align-items: center;
-  font-size:1.5rem;
-}  
-.delete{
-  color:red;
-  font-size:large
-}                          
+  font-size: 1.5rem;
+}
+.delete {
+  color: red;
+  font-size: large;
+}
