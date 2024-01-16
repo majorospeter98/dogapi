@@ -46,10 +46,8 @@ function Home() {
       .catch((error) => {
         console.error(error);
       });
-
     setDog((current) => {
-      console.log(current);
-      let check = current.filter((dogs) => dogs.id === dog.id);
+            let check = current.filter((dogs) => dogs.id === dog.id);
       if (check.length > 0) {
         check[0].isFavorite = true;
       }
