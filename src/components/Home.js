@@ -22,7 +22,7 @@ function Home() {
   }
   function getFavId() {
     axios
-      .get("https://api.thedogapi.com/v1/favourites/", config)
+      .get("/v1/favourites/", config)
       .then((response) => setFavId(response.data))
       .catch((e) => console.error("error during api get"));
   }
@@ -41,7 +41,7 @@ function Home() {
       sub_id: "Test",
     };
     axios
-      .post("https://api.thedogapi.com/v1/favourites", postdata, postOptions)
+      .post("/v1/favourites", postdata, postOptions)
       .then((response) => response.data)
       .catch((error) => {
         console.error(error);

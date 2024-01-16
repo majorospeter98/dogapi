@@ -2,8 +2,8 @@
   "homepage": "http://majorospeter98.github.io/dogapi",
   "name": "dog",
   "version": "0.1.0",
-"proxy": "https://api.thedogapi.com",
-  "private": true,
+  "proxy": "https://api.thedogapi.com/",
+   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
@@ -45,6 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^2.0.6"
   }
-
 }

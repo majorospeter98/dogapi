@@ -8,7 +8,6 @@
   font-style: normal;
 }
 :root{
-
   --primary: #3f51b5;
 }
 img {
@@ -35,8 +34,7 @@ a {
   align-items: center;
   gap: 2rem;
   background-color:var(--primary);
-  
-}
+  }
 .flex-container {
   display: flex;
   align-items: center;
@@ -73,5 +71,4 @@ footer{
   min-height: 5rem;
   background-color: var(--primary);
   color:white;
-
 }
