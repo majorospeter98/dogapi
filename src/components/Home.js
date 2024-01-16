@@ -10,7 +10,7 @@ function Home() {
   const [favid, setFavId] = useState([]);
   function fetch() {
     axios
-      .get("https://api.thedogapi.com/v1/images/search?limit=10", config)
+      .get("v1/images/search?limit=10", config)
       .then((response) =>
         response.data.map((random) => ({
           ...random,
@@ -22,7 +22,7 @@ function Home() {
   }
   function getFavId() {
     axios
-      .get("https://api.thedogapi.com//v1/favourites/", config)
+      .get("/v1/favourites/", config)
       .then((response) => setFavId(response.data))
       .catch((e) => console.error("error during api get"));
   }
