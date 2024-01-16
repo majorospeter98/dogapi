@@ -7,13 +7,13 @@ function Favourites() {
   const [favourite, setFavourite] = useState(null);
   const getFavourites = () => {
     axios
-      .get("/v1/favourites?sub_id=Test", config)
+      .get("https://api.thedogapi.com//v1/favourites?sub_id=Test", config)
       .then((response) => setFavourite(response.data));
   };
   const delFavourites = (e, id) => {
     e.preventDefault();
     axios
-      .delete(`/v1/favourites/${id}`, deleteConfig)
+      .delete(`https://api.thedogapi.com//v1/favourites/${id}`, deleteConfig)
       .then((response) => (response.data));
   };
   useEffect(() => {
