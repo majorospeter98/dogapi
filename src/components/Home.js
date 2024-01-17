@@ -41,7 +41,7 @@ function Home() {
       sub_id: "Test",
     };
     axios
-      .post("https://api.thedogapi.com//v1/favourites", postdata, postOptions)
+      .post("/v1/favourites", postdata, postOptions)
       .then((response) => response.data)
       .catch((error) => {
         console.error(error);
